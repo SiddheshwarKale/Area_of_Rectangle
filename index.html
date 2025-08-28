@@ -41,5 +41,20 @@
       <br />
       <h1 class="h1"></h1>
     </div>
+    <script>
+      const length = document.querySelector(".len");
+      const width = document.querySelector(".width");
+      const button = document.querySelector(".btn");
+      const ans = document.querySelector(".h1");
+
+      button.addEventListener("click", function () {
+        const len = Number(length.value);
+        const wid = Number(width.value);
+
+        const AreaOfRectangle = len * wid;
+
+        ans.textContent = AreaOfRectangle;
+      });
+    </script>
   </body>
 </html>
